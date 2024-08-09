@@ -1,0 +1,77 @@
+body{
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+}
+
+
+
+.change_pass_div h2{
+    margin-right: 130px;
+   color: rgb(174, 106, 238);
+}
+.change_pass_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 265px;
+    justify-content: space-between;
+    width: 40%;
+
+}
+.change_pass {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    width: 80%;
+}
+
+.change_conformpass {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+ .lab{
+    margin-bottom: 12px;
+}
+#change_conformpass_error {
+    width: 77%;
+    text-align: start;
+    margin: 0px;
+    height: 15px;
+    color: red;
+}
+input {
+    border-radius: 5px;
+    padding: 4px;
+    outline: none;
+    width: 84%;
+}
+.button_div {
+    display: flex;
+    width: 67%;
+    justify-content: space-around;
+}
+button {
+    width: 25%;
+    padding: 5px;
+    border: none;
+    border-radius: 5%;
+}
+.change_main_div{
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+button.close_btn {
+    background-color: #fbfbfb;
+    border: solid 1px #dfdfdf;
+}
+button.submit_btn {
+    background-color: blueviolet;
+    border: solid 1px #afafaf;
+    color: white;
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Css/sign_up.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+</head>
+<body>
+
+    <div class="sucessdiv">
+        <li class="fa fa-check-circle"> </li><h1> Successfully</h1>
+    </div>
+    <div class="maincontainer"> 
+        <div class="container">
+            <div class="form-box">
+               <h2>Sign up</h2>
+               <div class="input-field">
+                  <label for="">Username</label>
+                  <input type="text" id="username" placeholder="username">
+                  <i class="fa " aria-hidden="true"></i>
+                  <span></span>
+               </div>
+               <div class="input-field">
+                  <label for="">Email</label>
+                  <input type="text" id="email" placeholder="email address">
+                  <i class="fa " aria-hidden="true"></i>
+                  <span></span>
+               </div>
+               <div class="input-field">
+                  <label for="">Password</label>
+                  <input type="password" id="pass1"  placeholder="password">
+                  <i class="fa " aria-hidden="true"></i>
+                  <i class="show" id="eye1"></i>
+                  <span></span>
+               </div>
+               <div class="input-field">
+                  <label for="">Confirm Password</label>
+                  <input type="password" id="pass2" placeholder="confirm password">
+                  <i class="fa " aria-hidden="true"></i>
+                  <i class="show" id="eye2"></i>
+                  <span></span>
+               </div>
+                <!-- <div> -->
+                    <!-- <input type="button" id="Select_catg" value="Select Catgeory"><br> -->
+                <!-- </div> -->
+                
+
+               <input type="submit"  id="submit" value="Submit">
+            </div>
+            <p> Already Have An Account? <span class="color"> <a href="Login.html">Login </a></span> </p>
+         </div>
+
+  
+
+  
+    
+    <div class="img-box">
+        <img src="Assests/sign-up.jpg" alt="">
+      </div>
+</div>
+
+<!-- //otpdiv -->
+<div id="otpmaincontainer" style="display: none;">
+    <h2>To check the Email and enter your OTP</h2>
+
+</div>
+<div id="message">
+    <h5>Your password must contain</h5>
+    <div class="message_flex">
+        <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+        <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+        <p id="number" class="invalid">A <b>number</b></p>
+        <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+      </div>
+</div>
+  <div class="container1">
+    <p class="title">Select Your News Category</p>
+<div class="first_main_contianer">
+    <div id="category1" class="category1">
+        <div class="cat_img1"><img src="Assests/World.jpg" alt=""></div>
+        <div class="cat_text1">World</div>
+    </div>
+    <div id="category2"  class="category1">
+        <div class="cat_img1"><img src="Assests/indian-states-and-union-ter.jpg" alt=""></div>
+        <div class="cat_text1">India</div>
+    </div>
+    <div id="category3"  class="category1">
+        <div class="cat_img1"><img src="Assests/business-food.webp" alt=""></div>
+        <div class="cat_text1">Food</div>
+    </div>
+    <div id="category4"  class="category1">
+        <div class="cat_img1"><img src="Assests/travel-family-holidays.webp" alt=""></div>
+        <div class="cat_text1">Travel</div>
+    </div>
+    <div id="category5"  class="category1">
+        <div class="cat_img1"><img src="Assests/technology-artificial-intelligence.jpg" alt=""></div>
+        <div class="cat_text1">Technology</div>
+    </div>
+    <div id="category6"  class="category1">
+        <div class="cat_img1"><img src="Assests/science-robotics.jpg" alt=""></div>
+        <div class="cat_text1">Science</div>
+    </div>
+</div>
+<div class="second_main_contianer">
+    <div id="category1"  class="category1">
+        <div class="cat_img2"><img src="Assests/entertainment-movies-v2.webp" alt=""></div>
+        <div class="cat_text2">Entertainment</div>
+    </div>
+    <div id="category2"  class="category1">
+        <div class="cat_img2"><img src="Assests/Img1.jpg" alt=""></div>
+        <div class="cat_text2">Business</div>
+    </div>
+    <div id="category3"  class="category1">
+        <div class="cat_img2"><img src="Assests/health-mental-health.jpg" alt=""></div>
+        <div class="cat_text2 text2">Health and Fitness</div>
+    </div>
+    <div id="category4"  class="category1">
+        <div class="cat_img2"><img src="Assests/sports.jpeg" alt=""></div>
+        <div class="cat_text2" >Sports</div>
+    </div>
+    <div id="category5"  class="category1">
+        <div class="cat_img2"><img src="Assests/crime.jpeg" alt=""></div>
+        <div class="cat_text2">Crime</div>
+    </div>
+    <div id="category6"  class="category1">
+        <div class="cat_img2"><img src="Assests/Beauty.jpeg" alt=""></div>
+        <div class="cat_text2">Beauty</div>
+    </div>
+</div>
+<div class="third_main_contianer">
+    <div id="category1"  class="category1">
+        <div class="cat_img3"><img src="Assests/tem.jpg" alt=""></div>
+        <div class="cat_text3">Relegion</div>
+    </div>
+    <div id="category2"  class="category1">
+        <div class="cat_img3"><img src="Assests/mobile.jpg" alt=""></div>
+        <div class="cat_text3 text2">Moblie And Gadgets</div>
+    </div>
+    <div id="category3"  class="category1">
+        <div class="cat_img3"><img src="Assests/politics.jpeg" alt=""></div>
+        <div class="cat_text3">Politics</div>
+    </div>
+    <div id="category4"  class="category1">
+        <div class="cat_img3"><img src="Assests/Agriculture.jpeg" alt=""></div>
+        <div class="cat_text3">Agriculture</div>
+    </div>
+    <div id="category5"  class="category1">
+
+        <div class="cat_img3"><img src="Assests/Whether.png" alt=""></div>
+        <div class="cat_text3">Wheater</div>
+
+
+    </div>
+    <div id="category6"  class="category1">
+        <div class="cat_img3"><img src="Assests/Finanace.jpeg" alt=""></div>
+        <div class="cat_text3">Finance</div>
+    </div>
+</div>
+<div class="btn_div">
+   <a id="next_page" href=""><button class="btn">Select</button></a> 
+</div>
+<div class="span_div">
+<span id="span">Atleast 3 category must be selected</span>
+</div>
+</div> 
+
+
+
+
+
+
+
+   <script type="module" src="Js/sign_up.js"></script> 
+</body>
+</html>

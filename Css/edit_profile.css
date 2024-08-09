@@ -1,0 +1,197 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.title {
+    text-align: center;
+    font-size: 24px;
+}
+.color{
+    font-size: 12px;
+    color: #0000FF;
+    cursor: pointer;
+}
+i.fa-solid.fa-trash {
+    position: relative;
+    left: 46px;
+    top: -17px;
+    font-size: 12px;
+}
+.container {
+    margin: 0 auto;
+    width: 312px;
+}
+.main_container {
+    display: flex;
+    margin: 40px auto;
+}
+input {
+    width: 98%;
+    border: none;
+    font-size: 16px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid;
+    outline: none;
+}
+.top {
+    display: flex;
+    align-items: center;
+    width: 208%;
+    justify-content: space-between;
+    position: relative;
+    left: 84px;
+}
+label {
+    font-size: 18px;
+}
+#icon{
+    cursor: pointer;
+}
+
+#icon:hover{
+    color: #ce0000;
+}
+
+.profile_icon {
+    background-color: rgb(221,221,221);
+    height: 100px;
+    width: 100px;
+    border: none;
+    display: flex;
+    border-radius: 68px;
+    align-items: center;
+    justify-content: center;
+}
+.dropZoneOverlay, .FileUpload {
+    width: 283px;
+    cursor: pointer;
+}
+
+.dropZoneOverlay {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #7066fb;
+    position: absolute;
+    top: 231px;
+    text-align: center;
+}
+
+.FileUpload {
+    opacity: 0;
+    position: relative;
+    z-index: 1;
+}
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 68px;
+}
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button{
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+.cancel_btn{
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background-color: #FF0000;
+}
+.cancel_btn:hover{
+    background-color: #ce0000;
+}
+#btn_link {
+    position: relative;
+    left: 100px;
+    top: 24px;
+}
+.save_btn{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #7B65FF;
+}
+.save_btn:hover{
+    background-color:#6452D0 ;
+} 
+label.error {
+    color: red;
+    font-size: 14px;
+    position: relative;
+    top: -13px;
+}
+textarea {
+    outline: none;
+    width: 98%;
+    height: 48px;
+    border: none;
+    border-bottom: 1px solid;
+}
+.error1{
+    height: 14px;
+}
+
+/* classlist */
+
+.none{
+    display: none;
+}
+.block{
+    display: block;
+}
+/* ---------------loader ------------*/
+#loader {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #7B65FF;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 1.5s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Add animation to "page content" */
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }

@@ -1,0 +1,391 @@
+body {
+  margin: 0;
+  padding: 0;
+  
+  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption,
+figure, footer, header, hgroup, menu,
+nav, section {
+  display: block;
+}
+
+.container,
+.form-box {
+  display: block;
+  /* transform: translate(0px, 18px); */
+}
+
+body {
+  
+  font-family: 'Lato', sans-serif;
+}
+
+.form-box {
+  border-radius: 10px;
+  /* min-height: 200px; */
+  padding: 30px;
+  background: #fff;
+}
+
+.form-box .input-field {
+
+  margin-bottom: 20px;
+  position: relative;
+
+}
+
+.form-box input {
+  display: block;
+  min-height: 20px;
+  font-size: 16px;
+  padding: 10px;
+  width: 375px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-box input[type='text'] {
+  padding-right: 25px
+}
+
+.form-box h2 {
+  display: block;
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+.form-box label {
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 5px;
+  display: block;
+
+}
+
+.form-box input[type='submit'] {
+
+  background-color: #7B65FF;
+  cursor: pointer;
+  color: #fff;
+  cursor: pointer;
+  
+
+}
+
+.form-box .fa {
+  position: absolute;
+  /* right: 10px; */
+  left: 345px;
+  top: 40px;
+}
+
+.form-box .input-field.error input {
+  border-color: #f00;
+  border-width: 2px;
+}
+
+.form-box .input-field.error .fa {
+  color: #f00;
+}
+
+.form-box .input-field.success input {
+  border-color: #0b0;
+  border-width: 2px;
+}
+
+.form-box .input-field.success .fa {
+  color: #0b0;
+}
+
+.input-field span {
+  display: none;
+}
+
+.fa-check-circle{
+  color: #0b0;
+}
+
+.input-field.error span {
+  color: #f00;
+  display: block
+}
+
+.input-field.success span {
+  color: #0b0;
+}
+.maincontainer{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  gap: 5%;
+  height: 100vh;
+}
+P{
+  text-align: center;
+  color: #949494;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+#Select_catg{
+  background-color: white;
+  width: 150px;
+  color: #77536F;
+  border: 1px solid #77536F;
+ 
+}
+.img-box {
+  height: 713px;
+  width: 609px;
+}
+
+h1{
+  margin-bottom: 0;
+  color: #7B65FF;
+  text-align: center;
+}
+.sucessdiv{
+  display: flex;
+  align-items: center;
+justify-content: center;
+
+display: none;
+
+}
+/*passwords css*/
+i.show {
+    display: block;
+    position: absolute;
+    /* right: 10px; */
+    left: 86%;
+    top: 40px;
+    cursor: pointer;
+}
+#message{
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: absolute;
+    margin-top: -190px;
+    margin-left: 43%;
+    width:200px;
+    height: 210px;
+   
+  }
+  
+
+
+  #message p {
+    
+    font-size: 12px;
+  }
+ 
+  
+  .display{
+    color: red;
+    text-align: left;
+    margin-right: 180px;
+     visibility: hidden; 
+      }
+
+
+  .valid {
+    color: rgb(53, 243, 53);
+  }
+  
+  .valid:before {
+       position: relative;
+    /* left: -35px; */
+    content: "✔";
+  }
+  
+  
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    /* left: -35px; */
+    content: "✖";
+  }
+
+
+  /*OTP div CSS*/
+
+  #otpmaincontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    width: 40%;
+    height: 200px;
+    background-color: white;
+    padding: 1px;
+    margin: 0 auto;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+
+}
+  button.otpbtn {
+    color: white;
+    background: green;
+    width: 30%;
+    height: 32px;
+    margin: 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+.otpdiv {
+  transform: translate(6px, 20px);
+}
+input#otpinputvalue {
+  width: 45%;
+  height: 31px;
+  /* gap: 52px; */
+}
+.display_none{
+  display:none;
+}
+
+
+i.fa-solid.fa-thumbs-up {
+  color: green;
+  font-size: 163px;
+}
+  /*catgeory page css*/
+
+  .title{
+    font-size: 20px;
+}
+.cat_text1,.cat_text2,.cat_text3{
+    color: #5B5B5B;
+}
+.text2 {
+    font-size: 12px;
+}
+.cat_img1,.cat_img2,.cat_img3{
+    height: 80px;
+    width: 80px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+.first_main_contianer,.second_main_contianer,.third_main_contianer{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.container1{
+    display: flex;
+    flex-direction: column;
+    width:720px;
+    height: 649px;
+    justify-content: space-evenly;
+    border:1px solid #0000002b;
+    text-align: center;
+    margin: 55px  auto;
+    box-shadow: 0px 1px 4px 3px #0000002b;
+    display: none;
+    
+}
+
+.cat{
+    height: 124px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    justify-content: space-around;
+    width: 112px;
+    align-items: center;
+    cursor:pointer;
+    transition: 0.5s;
+}
+.btn{
+    width: 74px;
+    height: 32px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.5s;
+}
+.btn_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+}
+.span_div{
+    height: 12px;
+}
+span#span {
+    width: 100%;
+    color: red;
+    font-size: 13px;
+    text-align: center;
+}
+
+
+/* Classlist*/
+
+.box{
+    height: 124px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    justify-content: space-around;
+    width: 112px;
+    align-items: center;
+    cursor:pointer;
+    box-shadow:0px 0px 2px 2px #6452D0;
+    transition: 0.5s;
+}
+.cat{
+    height: 124px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    justify-content: space-around;
+    width: 112px;
+    align-items: center;
+    cursor:pointer;
+    transition: 0.5s;
+}
+.col1{
+    color: #969D88;
+    background-color: #E6E6E6;
+}
+.col2{
+    color: white;
+    background-color: #7B65FF;
+}
+.col3:hover{
+    background-color: #6452D0;
+}
+.col4{
+    color: white;
+    background-color: #8B7CEA;
+}
+.none{
+    display: none;
+}
+.flex{
+    display: block;
+}
